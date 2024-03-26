@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_typing_uninitialized_variables, non_constant_identifier_names, prefer_interpolation_to_compose_strings, unused_local_variable
+// ignore_for_file: prefer_const_constructors, prefer_typing_uninitialized_variables, non_constant_identifier_names, prefer_interpolation_to_compose_strings, unused_local_variable, must_be_immutable
 
 import 'package:flutter/material.dart';
 import 'package:flutter_burc_rehberi/burc_item.dart';
@@ -37,7 +37,7 @@ class BurcListesi extends StatelessWidget {
       var burcKucukResim =
           Strings.BURC_ADLARI[i].toLowerCase() + '${i + 1}.png';
       var burcBuyukResim =
-          Strings.BURC_ADLARI[i].toLowerCase() + 'buyuk' + '${i + 1}.png';
+          Strings.BURC_ADLARI[i].toLowerCase() + '_buyuk' + '${i + 1}.png';
       Burc eklenecekBurc =
           Burc(burcAdi, burcTarih, burcDetay, burcKucukResim, burcBuyukResim);
       gecici.add(eklenecekBurc);
